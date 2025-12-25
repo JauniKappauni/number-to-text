@@ -9,6 +9,9 @@ int main(void)
     int h = myNum / 100;
     int t = (myNum / 10) % 10;
     int o = myNum % 10;
+    if(myNum < 0 || myNum > 999){
+        printf("Please enter a number between -1 and 1000");
+    }
     if (myNum >= 100)
     {
         printf("%s ", words[h]);
